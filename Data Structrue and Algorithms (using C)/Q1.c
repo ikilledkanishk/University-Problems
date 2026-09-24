@@ -1,4 +1,4 @@
- //Problem Statement: Write a menu driven C program to implement the following using a 1D array with 
+//Problem Statement: Write a menu driven C program to implement the following using a 1D array with 
 //existing elements:
 //a. Insert a new element at any position
 //b. Delete an existing element from any position
