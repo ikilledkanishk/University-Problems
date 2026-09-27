@@ -140,4 +140,5 @@ struct Node* addPolynomials(struct Node *p1, struct Node *p2)
         p2 = p2->next;
     }
 
-    return
+    return 0;
+}
