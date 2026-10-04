@@ -3,14 +3,14 @@
 #salary of the employee.
 
 #Source Code:
-#sal = int(input("Enter basic pay: "))
-#pay = 0.50*sal + sal
-#t_sal = (pay*0.50) + (pay*0.15) + pay
-#print(f"{t_sal:.2f}")
+sal = int(input("Enter basic pay: "))
+pay = 0.50*sal + sal
+t_sal = (pay*0.50) + (pay*0.15) + pay
+print(f"{t_sal:.2f}")
   
 #B. Write a python program to find the greatest among three numbers.
 #Source Code:
-'''num1 = int(input())
+num1 = int(input())
 num2 = int(input())
 num3 = int(input())
 if (num1>num2) and (num1>num3):
@@ -18,7 +18,7 @@ if (num1>num2) and (num1>num3):
 elif (num2>num1) and (num2>num3):
     print(num2)
 else:
-    print(num3)'''
+    print(num3)
 
 #C. Write a python program to check whether a year is Leap Year.
 #Source Code:
