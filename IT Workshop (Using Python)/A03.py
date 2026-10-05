@@ -16,4 +16,26 @@
 
 
 #D. Write three separate python programs to generate the following patterns:
-#Source Code:
+#Pattern 1:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+#Pattern 2:
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+
+#Pattern 3:
+   *
+ * * *
+* * * * *
+* * * * * * 
