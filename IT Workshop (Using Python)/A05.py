@@ -1,4 +1,4 @@
-'''AGiven a list of numbers (integers), find second maximum and second minimum in this list.
+'''A. Given a list of numbers (integers), find second maximum and second minimum in this list.
 Input: 10 11 100 200 300 34
 Output: 200 11
 B. Given a list L write a program to make a new list and match the numbers inside list L to its respective
