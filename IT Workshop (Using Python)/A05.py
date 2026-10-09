@@ -27,9 +27,6 @@ def index_match(L):
         if num >= 0:
             new_list[num] = num          
     return new_list
-L = [1, 5, 2]
-output_list = index_match(L)
-print(output_list)
 
 '''C. Take two statements from user as input and show
 a. Unique common words
@@ -51,10 +48,6 @@ def analyze_statements(stat1, stat2):
     print(f"a. {common}")
     print(f"b. {all_unique}")
     print(f"c. {only_in_first}")
-# Example usage
-statement1 = "Here is Python"
-statement2 = "We are learning Python"
-analyze_statements(statement1, statement2)
 
 '''D. Take a string as input. Form a dictionary which will have each unique word present in the string as key
 and frequency of the word as value.
@@ -68,11 +61,6 @@ def word_frequency(text):
         frequency_dict[word] = frequency_dict.get(word, 0) + 1
     return frequency_dict
 
-# Example usage
-input_str = "Python is inspired by Monty Python"
-print(word_frequency(input_str))
-
-
 '''E. Given a list of strings, write a program to write sort the list of strings based on last character of each
 string.
 Input: ['ram', 'shyam', 'lakshami']
@@ -80,7 +68,3 @@ Output: ['lakshami', 'ram', 'shyam']'''
 #Source Code: 
 def sort_by_last_char(strings):
     return sorted(strings, key=lambda x: x[-1])
-
-# Example usage
-input_strings = ['ram', 'shyam', 'lakshami']
-print(sort_by_last_char(input_strings))
