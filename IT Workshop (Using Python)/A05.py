@@ -11,10 +11,6 @@ def find_second_extremes(numbers):
     second_min = unique_nums[1]
     second_max = unique_nums[-2]
     return second_max, second_min
-input_list = [10, 11, 100, 200, 300, 34]
-sec_max, sec_min = find_second_extremes(input_list)
-print(f"{sec_max} {sec_min}")
-
 
 '''B. Given a list L write a program to make a new list and match the numbers inside list L to its respective
 index in the new list. Put 0 at remaining indexes. Also print the elements of the new list in the single
@@ -25,10 +21,8 @@ Output: [0, 1, 2, 0, 0, 5]'''
 def index_match(L):
     if not L:
         return [] 
-    # The size of the new list needs to be max(L) + 1 to accommodate the largest index
     max_val = max(L)
     new_list = [0] * (max_val + 1) 
-    # Place the numbers at their respective index positions
     for num in L:
         if num >= 0:
             new_list[num] = num          
@@ -49,23 +43,14 @@ b. {'We', 'are', 'learning', 'is', 'Python', 'Here'}
 c. {'is', 'Here'}'''
 #Source Code:
 def analyze_statements(stat1, stat2):
-    # Split strings into words and convert to sets for unique elements
     set1 = set(stat1.split())
     set2 = set(stat2.split())
-    
-    # a. Unique common words (Intersection)
     common = set1.intersection(set2)
-    
-    # b. All unique words (Union)
     all_unique = set1.union(set2)
-    
-    # c. Unique words in 1st statement but not in 2nd (Difference)
     only_in_first = set1.difference(set2)
-    
     print(f"a. {common}")
     print(f"b. {all_unique}")
     print(f"c. {only_in_first}")
-
 # Example usage
 statement1 = "Here is Python"
 statement2 = "We are learning Python"
@@ -79,11 +64,8 @@ Output: {“Python”: 2, “is”: 1, “inspired”: 1, “by”: 1, “Monty�
 def word_frequency(text):
     words = text.split()
     frequency_dict = {}
-    
     for word in words:
-        # Increment count if word exists, otherwise initialize to 1
         frequency_dict[word] = frequency_dict.get(word, 0) + 1
-        
     return frequency_dict
 
 # Example usage
@@ -97,7 +79,6 @@ Input: ['ram', 'shyam', 'lakshami']
 Output: ['lakshami', 'ram', 'shyam']'''
 #Source Code: 
 def sort_by_last_char(strings):
-    # The key function uses x[-1] to target the last character of each string
     return sorted(strings, key=lambda x: x[-1])
 
 # Example usage
